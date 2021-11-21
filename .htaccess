@@ -1,0 +1,75 @@
+# Helicon Ape version 3.1.0.115
+RewriteEngine On
+DirectoryIndex index.php
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^error.html$ error.php [L]
+RewriteRule ^error.php$ error.php [L]
+#ErrorDocument 400 http://%{HTTP_HOST}/error.php?e=400
+#ErrorDocument 401 http://%{HTTP_HOST}/error.php?e=401
+#ErrorDocument 403 http://%{HTTP_HOST}/error.php?e=403
+#ErrorDocument 404 http://%{HTTP_HOST}/error.php?e=404
+#ErrorDocument 405 http://%{HTTP_HOST}/error.php?e=405
+#ErrorDocument 407 http://%{HTTP_HOST}/error.php?e=407
+#ErrorDocument 408 http://%{HTTP_HOST}/error.php?e=408
+#ErrorDocument 411 http://%{HTTP_HOST}/error.php?e=411
+#ErrorDocument 413 http://%{HTTP_HOST}/error.php?e=413
+#ErrorDocument 414 http://%{HTTP_HOST}/error.php?e=414
+#ErrorDocument 415 http://%{HTTP_HOST}/error.php?e=415
+#ErrorDocument 500 http://%{HTTP_HOST}/error.php?e=500
+#ErrorDocument 501 http://%{HTTP_HOST}/error.php?e=501
+#ErrorDocument 502 http://%{HTTP_HOST}/error.php?e=502
+#ErrorDocument 503 http://%{HTTP_HOST}/error.php?e=503
+#ErrorDocument 504 http://%{HTTP_HOST}/error.php?e=504
+#ErrorDocument 505 http://%{HTTP_HOST}/error.php?e=505
+RewriteRule ^admin$ admin/ [L]
+RewriteRule ^admin/$ admin/ [L]
+RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb.php?w=$1&h=$2&zc=$3&q=100&src=$4  [L]
+
+
+RewriteRule ^([a-zA-Z0-9_-]+)/$  http://%{HTTP_HOST}/$1 [L,R=301]
+RewriteRule ^([a-zA-Z0-9_-]+)$	index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&page=([0-9]+)$	index.php?com=$1&page=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)&keywords=(.*)$	index.php?com=$1&keywords=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).lang$ index.php?com=setlang&lang=$1 [L]
+
+
+	## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+<ifModule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/* text/html text/xml text/css text/plain text/x-component text/x-js text/richtext text/xsd text/xsl
+   AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml image/x-icon
+   AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
+   AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
+   AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
+   AddOutputFilterByType DEFLATE font/truetype font/opentype
+   Header append Vary User-Agent env=!dont-vary
+   AddOutputFilter DEFLATE js css htm html xml text
+</ifModule>
+
+# 1 year
+<FilesMatch ".(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+# 1 WEEK
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">z
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch ".(xml|txt|css|js)$">
+Header set Cache-Control "max-age=604800, proxy-revalidate"
+</FilesMatch>
