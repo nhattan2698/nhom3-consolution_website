@@ -1,0 +1,33 @@
+.Tabside .tab-custom {
+    display: flex;
+}
+.Tabside .TabImage {
+    margin-right: 1rem;
+}
+.Tabside .Description h3 {
+    font-size: 24px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    line-height: 29px;
+}
+
+.Tabside .Description h3 span {
+    padding-left: 3px;
+    font-size: 14px;
+    color: #ff9000;
+    display: block;
+}
+
+.Tabside .Description p {
+    padding: 21px 0px 4px 0px;
+    font-size: 16px;
+    margin: 0px;
+    font-family: 'Open Sans';
+    line-height: 25px;
+}
+
+.Tabside .Description p .cyan {
+    font-size: 16px;
+    color: #08c2ff;
+}
