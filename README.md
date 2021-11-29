@@ -1,76 +1,66 @@
-# Website giải pháp chữ ký số cho doanh nghiệp
-## Nhóm thực hiện : Nhóm 3
-## Thành viên : 
-### 1.Trịnh Thành Đạt
-### 2.Bùi Nhật Tân
-Website được viết bằng ngôn ngữ lập trình PHP & Mysql với Framework Laravel theo mô hình MVC.
-## Mô hình MVC
-MVC là viết tắt của cụm từ “Model-View-Controller“. MVC là một mẫu kiến trúc phần mềm để tạo lập giao diện người dùng trên máy tính. MVC chia thành ba phần được kết nối với nhau. Chúng bao gồm Model (dữ liệu), View (giao diện) và Controller (bộ điều khiển).
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-Đơn giản hơn, là mô hình này được chia thành 3 phần trong soure code. Và mỗi phần đảm nhận vai trò và nhiệm vụ riêng biệt nhau và độc lập.
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-<img src="https://vietnix.vn/wp-content/uploads/2021/07/MVC.webp">
+## About Laravel
 
-Mô hình MVC (MVC pattern) thường được dùng để phát triển giao diện người dùng. Nó cung cấp các thành phần cơ bản để thiết kế một chương trình cho máy tính hoặc điện thoại di động, cũng như là các ứng dụng web.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-Luồng xử lý trong của mô hình MVC, bạn có thể hình dung cụ thể và chi tiết qua từng bước dưới đây:
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Khi một yêu cầu của từ máy khách (Client) gửi đến Server. Thì bị Controller trong MVC chặn lại để xem đó là URL request hay sự kiện.
-Sau đó, Controller xử lý input của user rồi giao tiếp với Model trong MVC.
-Model chuẩn bị data và gửi lại cho Controller.
-Cuối cùng, khi xử lý xong yêu cầu thì Controller gửi dữ liệu trở lại View và hiển thị cho người dùng trên trình duyệt.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Framework Laravel
-Laravel được tạo ra bởi Taylor Otwell với phiên bản đầu tiên được ra mắt vào tháng 6 năm 2011. Từ đó cho đến này, Laravel đã phát triển một cách mạnh mẽ, vượt qua những framework khác và vươn lên trở thành framework PHP có thể nói được ưa chuộc và được cộng đồng sử dụng nhiều nhất khi phát triển web với PHP. 
+## Learning Laravel
 
-Để có thể cài Laravel, bạn phải đáp ứng được các yêu cầu bắt buộc sau:
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-PHP >= 7.1.3
+## Laravel Sponsors
 
-OpenSSL PHP Extension
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-PDO PHP Extension
+### Premium Partners
 
-Mbstring PHP Extension
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[CMS Max](https://www.cmsmax.com/)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
+- **[Romega Software](https://romegasoftware.com)**
 
-Tokenizer PHP Extension
+## Contributing
 
-XML PHP Extension
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Ctype PHP Extension
+## Code of Conduct
 
-JSON PHP Extension
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Hướng dẫn cài đặt và chạy website
+## Security Vulnerabilities
 
-B1 : Download và giải nén thư mục code
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-B2 : Tạo database trên xampp, import database trong thư mục code vừa tải về
+## License
 
-B3 : Khởi chạy Xampp, chạy Apache và Mysql
-
-B4 : Mở cửa sổ cmd của Window, trỏ đường dẫn vào thư mục code đã giải nén, chạy lệnh php artisan server
-
-B5 : Đăng nhập đường dẫn do cửa sổ cmd cung cấp 
-
-
-Đăng nhập trang quản lí admin bằng đường_dẫn/admin, login tài khoản admin với user và password là : mod@admin.com,password
-
-
-## Một số hình ảnh của trang web
-
-Phần giao diện chính
-
-<img src="https://i.imgur.com/ZmYk1KB.png">
-
-<img src="https://i.imgur.com/iRe9QzR.png">
-
-<img src="https://i.imgur.com/Wk8qsKc.png">
-
-<img src="https://i.imgur.com/WNyc0Pg.png">
-
-Giao diện trang Admin
-
-<img src="https://i.imgur.com/q8Qx3fG.png">
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

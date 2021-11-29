@@ -267,11 +267,14 @@
             </style>
         </div>
     </div>
+	<div style="text-align:center;color:blue"><h2>Liên hệ đăng ký sử dụng</h2></div>
+	<div style="text-align:center;color:red"><h3>Hotline: 1900 8080</h3></div>
+	<div style="text-align:center;color:red"><h3>Tòa nhà VNPT, số 57 phố Huỳnh Thúc Kháng, Phường Láng Hạ, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</h3></div>
     @endif
 
     <!-- Main Content-->
     @yield('content')
-    <div id="banquyen" style="text-align:center;"> Hotline 19001080 - MADEVN &copy 2019. ALL RIGHTS RESERVED
+    <div id="banquyen" style="text-align:center;"> Hotline 19008080 - MADEVN &copy 2019. ALL RIGHTS RESERVED
         
         
     </div>
