@@ -46,7 +46,7 @@ JSON PHP Extension
 
 B1 : Download và giải nén thư mục code
 
-B2 : Tạo database trên xampp, import database trong thư mục code vừa tải về
+B2 : Tạo 1 database có tên là nhattan_db trên xampp, import database nhattan_db.sql trong thư mục code vừa tải về
 
 B3 : Download và giải nén thư mục vendor, copy thư mục vendor vừa giải nén vào thư mục code
 
