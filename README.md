@@ -50,7 +50,7 @@ B2 : Tạo 1 database có tên là nhattan_db trên xampp, import database nhatt
 
 B3 : Download và giải nén thư mục vendor, copy thư mục vendor vừa giải nén vào thư mục code
 
-https://drive.google.com/drive/folders/1-fxfTEeVKiiiXjF3XLls0sDTphXCexOk?usp=sharing
+https://www.dropbox.com/s/vn9h9b7702ts9j0/vendor.zip?dl=0
 
 B4 : Khởi chạy Xampp, chạy Apache và Mysql
 
