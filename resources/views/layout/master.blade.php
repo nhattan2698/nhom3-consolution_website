@@ -35,7 +35,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <div class="site-heading">
                         <h1>CÔNG TY MADEVN</h1>
-                        <span class="subheading">Dịch vụ chứng thực chữ ký số công cộng</span>
+                        <span class="subheading">Giải pháp chứng thực chữ ký số cho doanh nghiệp</span>
                     </div>
                 </div>
             </div>
@@ -274,6 +274,7 @@
 
     <!-- Main Content-->
     @yield('content')
+    <!--Footer-->
     <div id="banquyen" style="text-align:center;"> Hotline 19008080 - MADEVN &copy 2019. ALL RIGHTS RESERVED
         
         
